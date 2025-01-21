@@ -9,23 +9,24 @@ This document provides a comprehensive overview of the frontend development for 
 - **ProductCard**
   - Displays product details (e.g., name, price, image).
   - Reusable across pages like product listing and related products sections.
+  - Dynamically fetches data from Sanity CMS.
+  ![alt text](Screenshot_21-1-2025_225439_localhost.jpeg)
 - **CategoryFilter**
   - Allows users to filter products by categories dynamically.
   - Integrated with state management for seamless interaction.
-- **SearchBar**
-  - Filters products by name or tags.
-  - Implements debounced input for optimized performance.
+  - Dynamically fetches categories from Sanity CMS.
+  ![alt text](<image copy 2.png>)![alt text](<image copy.png>)
 - **FeaturedProducts**
   - Highlights top or promotional products.
   - Fetches data dynamically from Sanity CMS.
 - **AddToCart & CartContent**
   - Manages cart functionality.
   - Updates cart items dynamically with local state.
-
+![alt text](image.png)
 ### **Additional Features:**
 - Pagination and infinite scrolling for large datasets.
 - Related products displayed on product detail pages.
-
+![alt text](<image copy 3.png>)
 ## **Styling and Responsiveness**
 - **Tailwind CSS** was used for styling, ensuring:
   - Mobile-first design.
