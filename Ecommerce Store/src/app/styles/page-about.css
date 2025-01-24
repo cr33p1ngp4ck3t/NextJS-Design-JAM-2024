@@ -1,0 +1,100 @@
+.header-container-about {
+    display: flex;
+    flex-direction: column;
+    height: 134px;
+
+    .header-container-1 {
+        display: flex;
+        height: calc(134px - 64px);
+        padding: 0 30px;
+        justify-content: space-between;
+        .header-icons-about{ 
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            #about-links {
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+    .header-container-2 {
+        display: flex;
+        justify-content: center;
+        height: 64px;
+        background: #F9F9F9;
+        .header-container-items {
+            justify-content: center;
+            color: #726E8D;
+        }
+    }
+}
+
+.about-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 244px;
+    margin: 2% 7%;
+    >div:first-child {
+        font-size: 36px;
+        max-width: 704px;
+    }
+}
+
+.about-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    min-height: 603px;
+    background-color: #F9F9F9;
+    .about-services-1 {
+        display: flex;
+        flex: 1;
+        min-width: 300px;
+        background: url('/about.jpeg') no-repeat center center / cover;
+        object-fit: cover;
+        object-position: center;
+        min-height: 425px;
+    }
+    .about-services-2{ 
+        display: flex;
+        min-width: 300px;
+        flex: 1;
+        padding: 5% 6% 3%;
+        flex-wrap: wrap;
+        .h {
+            font-size: 24px;
+        }
+        .t{ 
+            font-size: 18px;
+            font-family: "Satoshi", sans-serif;
+        }
+        .service-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            >div:last-child {
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .about-features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3% 7%;
+        >div:first-child {
+            font-size: 32px;
+        }
+        >Link {
+            flex: 0;
+        }
+    }
+}

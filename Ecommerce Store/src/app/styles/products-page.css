@@ -1,0 +1,81 @@
+.products-page {
+    background: url('/product-hero.jpeg') no-repeat center center / cover;
+    height: 209px;
+    display: flex;
+    > div {
+        display: flex;
+        color: white;
+        font-size: 36px;
+        align-items: end;
+        margin: 50px;
+    }
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.filter-container-mobile {
+    display: none;
+}
+
+.filter-content {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+
+.filter-content-1 {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    flex: 2;
+}
+
+.filter-content-2 {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    >div {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        display: none;
+    }
+
+    .filter-container-mobile {
+        display: flex;
+        align-items: center;
+        height: 96px;
+        justify-content: center;
+    }
+
+    .filter-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        justify-items: center;
+        > select {
+            border: none;
+            width: 163px;
+            height: 56px;
+            text-align: center;
+            background: #F9F9F9;
+        }
+    }
+
+}
